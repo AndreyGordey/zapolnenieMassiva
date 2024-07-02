@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="arrayOutput"></div>
+
+    <script>
+        // Создаем пустой массив
+        var array = [];
+
+        // Заполняем массив случайными числами от 1 до 100 (можно изменить диапазон по вашему желанию)
+        for (var i = 0; i < 10; i++) {
+            array.push(Math.floor(Math.random() * 100) + 1);
+        }
+
+        // Выводим массив на экран
+        var arrayOutput = document.getElementById("arrayOutput");
+        arrayOutput.innerHTML = "<p>Массив: " + array.join(", ") + "</p>";
+    </script>
+
+</body>
+
+</html>
